@@ -1,0 +1,30 @@
+
+          <html>
+            <body><!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Events</title>
+    </head>
+    <body>
+        <h2>Click the button to sisplay the date:</h2>
+        <button onclick="displayDate()">Click me !!!</button>
+        <p id="date"></p>
+        <br><br>
+        <h2>Mouse over</h2>
+      <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/350/slightly-smiling-face_1f642.png" onmouseover="zoomit(this)" onmouseout="zoomout(this)" height="32px" width="32px">
+    </body>
+</html></body>
+            <style></style>
+            <script>function displayDate(){
+    document.getElementById("date").innerHTML=Date();
+}
+function zoomit(x){
+    x.style.height="64px";
+    x.style.width="64px";
+}
+function zoomout(x){
+    x.style.height="32px";
+    x.style.width="32px";
+}</script>
+          </html>
+        
